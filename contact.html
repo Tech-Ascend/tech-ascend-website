@@ -4,12 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Header with Navigation -->
-    <header>
-      <nav>
+    <header id="header">
+      <nav id="nav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="community.html">Community</a>
@@ -17,27 +23,60 @@
         <a href="contact.html">Contact</a>
       </nav>
     </header>
-    <h2>Contact Us!</h2>
-    <p>
-      We're here to answer any questions relating to Tech Ascend. You can
-      contact us if you're interesting in joining our community! Feel free to
-      reach out!
-    </p>
 
-    <h2>Get in Touch with Daniel Guillen</h2>
-    <!-- insert image -->
-    <p><strong>Email:</strong>danielguillencoco@yahoo.com</p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/djg3577" target="_blank">View GitHub Profile</a></p>
-</section>
+    <!-- Contact Section -->
+    <section id="contact-section" class="dark-section">
+      <h2 id="contact-header">Contact Us!</h2>
+      <p id="contact-description">
+        We're here to answer any questions relating to Tech Ascend. Feel free to
+        reach out!
+      </p>
 
-    <!-- Join our community: -->
-    <section>
-      <h2>Join Our Community</h2>
-      <p>
+      <!-- Contact Form -->
+      <form
+        id="contact-form"
+        action="mailto:danielguillencoco@yahoo.com"
+        method="POST"
+        enctype="text/plain"
+      >
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <p id="success-message" style="display: none; color: #00d4ff">
+        Thank you for your message! We'll get back to you soon.
+      </p>
+    </section>
+
+    <!-- Get in Touch Section -->
+    <section id="get-in-touch-section" class="alternate-section">
+      <h2 id="get-in-touch-header">Get in Touch with Daniel Guillen</h2>
+      <p id="email-info"><strong>Email:</strong> danielguillencoco@yahoo.com</p>
+      <p id="github-info">
+        <strong>GitHub:</strong>
+        <a href="https://github.com/djg3577" target="_blank"
+          >View GitHub Profile</a
+        >
+      </p>
+    </section>
+
+    <!-- Join Our Community Section -->
+    <section id="join-community-section" class="dark-section">
+      <h2 id="join-community-header">Join Our Community</h2>
+      <p id="join-community-description">
         Ready to become part of Tech Ascend? Click below to join our community
         on Skool and start your journey towards becoming a software engineer!
       </p>
       <button
+        id="join-community-button"
         onclick="location.href='https://www.skool.com/techascend'"
         target="_blank"
       >
@@ -45,12 +84,15 @@
       </button>
     </section>
 
-      <!-- Footer -->
-      <footer>
-        <p>&copy; 2024 Tech Ascend | All Rights Reserved</p>
-      </footer>
+    <!-- Footer -->
+    <footer id="footer">
+      <p>&copy; 2024 Tech Ascend | All Rights Reserved</p>
+      <p id="footer-link">
+        <a href="https://www.skool.com/techascend" id="skool-link">Skool</a>
+      </p>
+    </footer>
 
-
-
+    <!-- JavaScript for Form Validation -->
+    <script src="index.js"></script>
   </body>
 </html>

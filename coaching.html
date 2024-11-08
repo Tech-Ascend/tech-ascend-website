@@ -4,64 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coaching</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
-  <!-- navigation bar:  -->
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="community.html">Community</a>
-      <a href="coaching.html">Coaching</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
   <body>
-    <h1>Coaching</h1>
-    <p>
-      Unlock your potential with personalized coaching sessions led by Daniel
-      Guillen! These one-on-one sessions are designed to help aspiring software
-      engineers build their skills and confidence. You’ll receive a tailored
-      roadmap and guidance to tackle complex projects and reach your unique
-      goals.
-    </p>
-    <h2>Why Our Coaching?</h2>
-    <p>
-      <li>
-        <strong>Customized Learning Plan:</strong>We develop a roadmap based on
-        your current skills and goals.
-      </li>
-      <li>
-        <strong>Skill Assessment and Feedback:</strong> Receive targeted
-        feedback on your coding skills.
-      </li>
-      <li>
-        <strong>Continuous Support: </strong> Access support from an experienced
-        software engineer to keep you on track.
-      </li>
-    </p>
+    <!-- Header with Navigation -->
+    <header id="header">
+      <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="community.html">Community</a>
+        <a href="coaching.html">Coaching</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-    <section>
-      <h2>How It Works:</h2>
-      <p>
-        Each coaching session would be tailored to your goals. We'll see where
-        you are, create a roadmap, and provide steps to help you pursue a career
-        in software engineering.
+    <!-- Coaching Introduction Section -->
+    <section id="coaching-intro" class="dark-section">
+      <h1 id="coaching-header">Coaching</h1>
+      <p id="coaching-description">
+        Unlock your potential with personalized coaching sessions led by Daniel
+        Guillen! These one-on-one sessions are designed to help aspiring
+        software engineers build their skills and confidence. You’ll receive a
+        tailored roadmap and guidance to tackle complex projects and reach your
+        unique goals.
       </p>
     </section>
 
-    <section>
-      <h2>Ready to Begin?</h2>
-        <p>
-          Take the next step in your software engineering journey with
-          one-on-one coaching. Click below to book a session and get started!
-        </p>
-        <button onclick="location.href='https://calendly.com/danielguillencoco/30min'" target="_blank">
-          Book a Coaching Session
-        </button>
-      </section>
+    <!-- Coaching Benefits Section -->
+    <section id="coaching-benefits" class="alternate-section">
+      <h2 id="benefits-header">Why Our Coaching?</h2>
+      <ul id="benefits-list">
+        <li>
+          <strong>Customized Learning Plan:</strong> We develop a roadmap based
+          on your current skills and goals.
+        </li>
+        <li>
+          <strong>Skill Assessment and Feedback:</strong> Receive targeted
+          feedback on your coding skills.
+        </li>
+        <li>
+          <strong>Continuous Support:</strong> Access support from an
+          experienced software engineer to keep you on track.
+        </li>
+      </ul>
     </section>
+
+    <!-- How Coaching Works Section -->
+    <section id="how-it-works" class="dark-section">
+      <h2 id="how-header">How It Works:</h2>
+      <p id="how-description">
+        Each coaching session is tailored to your goals. We'll assess where you
+        are, create a roadmap, and provide steps to help you pursue a career in
+        software engineering.
+      </p>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="coaching-cta" class="alternate-section">
+      <h2 id="cta-header">Ready to Begin?</h2>
+      <p id="cta-description">
+        Take the next step in your software engineering journey with one-on-one
+        coaching. Click below to book a session and get started!
+      </p>
+      <button
+        id="book-session-button"
+        onclick="location.href='https://calendly.com/danielguillencoco/30min'"
+        target="_blank"
+      >
+        Book a Coaching Session
+      </button>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <p>&copy; 2024 Tech Ascend | All Rights Reserved</p>
+      <p id="footer-link">
+        <a href="https://www.skool.com/techascend" id="skool-link">Skool</a>
+      </p>
+    </footer>
   </body>
 </html>

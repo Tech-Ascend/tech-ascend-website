@@ -4,12 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Join the Tech Ascend Community</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Header with Navigation -->
-    <header>
-      <nav>
+    <header id="header">
+      <nav id="nav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="community.html">Community</a>
@@ -19,9 +25,9 @@
     </header>
 
     <!-- Community Introduction -->
-    <section>
-      <h1>Join the Tech Ascend Community!</h1>
-      <p>
+    <section id="community-intro">
+      <h1 id="community-header">Join the Tech Ascend Community!</h1>
+      <p id="community-description">
         We are a community designed for aspiring software engineers like you! We
         connect, learn, and grow together, making progress towards our goals
         with support from peers and mentors.
@@ -29,22 +35,22 @@
     </section>
 
     <!-- Benefits of Joining Us -->
-    <section>
-      <h2>Why Join Us?</h2>
-      <ul>
-        <li>
+    <section id="benefits-section">
+      <h2 id="benefits-header">Why Join Us?</h2>
+      <ul id="benefits-list">
+        <li class="benefit-item">
           <strong>Daily Check-Ins:</strong> We keep ourselves accountable by
           tracking our progress with daily check-ins.
         </li>
-        <li>
+        <li class="benefit-item">
           <strong>Developer Review Calls:</strong> Receive personalized feedback
           on your code and projects.
         </li>
-        <li>
+        <li class="benefit-item">
           <strong>Exclusive Resources:</strong> Access curated resources to help
           you learn and grow in software engineering.
         </li>
-        <li>
+        <li class="benefit-item">
           <strong>Networking Opportunities:</strong> Connect with a community of
           ambitious coders and future members of the tech industry!
         </li>
@@ -52,13 +58,14 @@
     </section>
 
     <!-- Call to Action -->
-    <section>
-      <h2>What We Do</h2>
-      <p>
+    <section id="cta-section">
+      <h2 id="cta-header">What We Do</h2>
+      <p id="cta-description">
         Begin your journey towards becoming a software engineer by joining the
         Tech Ascend community! Click below to join us on Skool.
       </p>
       <button
+        id="join-button"
         onclick="location.href='https://www.skool.com/techascend'"
         target="_blank"
       >
@@ -67,8 +74,11 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-      <p>&copy; 2024 Tech Ascend | All Rights Reserved</p>
+    <footer id="footer">
+      <p id="footer-text">&copy; 2024 Tech Ascend | All Rights Reserved</p>
+      <p id="footer-link">
+        <a href="https://www.skool.com/techascend" id="skool-link">Skool</a>
+      </p>
     </footer>
   </body>
 </html>
